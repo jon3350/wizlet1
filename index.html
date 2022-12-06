@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header class="main-header">
+        <span>Wizlet</span>
+        <nav class="main-nav">
+            <ul><a href="index.html">Home</a></ul>
+            <ul><a href="index.html#create-nav">Create</a></ul>
+            <ul>Settings</ul>
+        </nav>
+    </header>
+
+    <div class="my-sets-div">
+        <h1>My Sets</h1>
+        <div data-setContainer class="set-container">
+            <button class="set-button">
+                <h1>TItle </h1>
+                <h2>Term Count</h2>
+            </button>
+        </div>
+    </div>
+
+    <div id="create-nav" class="create-set-div">
+        <h1>Create Set</h1>
+        <div class="form-container">
+            <input data-titleInput type="text" placeholder="Set Title">
+            <textarea data-importInput cols="30" rows="10" placeholder="Paste the imported list here. Enter between terms and tab for def"></textarea>
+            <button data-createSetButton class="create-set-button">Create Set</button>
+        </div>
+    </div>
+</body>
+</html>

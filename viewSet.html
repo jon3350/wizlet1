@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ViewSet</title>
+    <link rel="stylesheet" href="stylesViewSet.css">
+    <script src="scriptViewSet.js" defer></script>
+</head>
+<body>
+    <header class="main-header">
+        <span>Wizlet</span>
+        <nav class="main-nav">
+            <ul><a href="index.html">Home</a></ul>
+            <ul><a href="index.html#create-nav">Create</a></ul>
+            <ul>Settings</ul>
+        </nav>
+    </header>
+
+    <h1 data-title class="title">Title</h1>
+    <div class="game-buttons-container">
+        <button><a href="write.html">Write</a></button>
+        <button>Learn</button>
+        <button>Test</button>
+        <button>Match</button>
+    </div>
+    <div class="flashcard-container">
+        <div class="flashcard-info">
+            <span data-termOrDef class="term-or-def-info">Term</span>
+            <span data-cardNumber class="card-number-info">11/23</span>
+            <span class="start-info">star</span>
+        </div>
+        <div data-flashcardContent class="flashcard-content">TERM</div>
+        <div class="flashcard-controls">
+            <button data-prevButton>Prev</button>
+            <button data-nextButton>Next</button>
+        </div>
+    </div>
+
+    <h1 data-term-table-title class="term-table-title">Terms Table (#)</h1>
+    <div class="term-table-container">
+        <div>Terms</div>
+        <div>Defintion</div>
+
+        <div data-insert-row-above>Terms</div>
+        <div>Defintion</div>
+    </div>
+
+</body>
+</html>

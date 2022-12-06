@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Write</title>
+    <link rel="stylesheet" href="stylesWrite.css">
+    <script src="scriptWrite.js" defer></script>
+</head>
+<body>
+    <header class="main-header">
+        <span>Wizlet</span>
+        <nav class="main-nav">
+            <ul><a href="index.html">Home</a></ul>
+            <ul><a href="index.html#create-nav">Create</a></ul>
+            <ul>Settings</ul>
+        </nav>
+    </header>
+
+    <div class="horizontal-container">
+        <div class="display-controls-container">
+            <h1>Write!</h1>
+            <div class="display-control-item remaining-tag">Remaining #</div>
+            <div class="display-control-item incorrect-tag">Incorrect #</div>
+            <div class="display-control-item correct-tag">Correct #</div>
+            <!-- <div class="display-control-item">
+                <label for="term-or-def-option">Answer With</label>
+                <input id="term-or-def-option" list="term-or-def-datalist">
+                <datalist id="term-or-def-datalist">
+                    <option value="Term"></option>
+                    <option value="Defintion"></option>
+                </datalist>
+                <button class="restart-button">Restart</button>
+            </div> -->
+        </div>
+
+        <div data-writeCard class="write-card">
+            <div data-termDisplay class="term">TERM</div>
+            <div class="input-and-button-wrapper">
+                <input data-answerInput type="text" placeholder="Type Answer Here">
+                <button data-answerButton class="answer-button">Answer</button>
+            </div>
+            <div data-accentButtonParent class="accent-buttons">
+                <button>A</button>
+                <button>A</button>
+                <button>A</button>
+                <button>A</button>
+                <button>A</button>
+            </div>
+
+            <div data-afterSubmitted class="after-submitted">
+                <div class="your-answer">YOUR ANSWER: </div>
+                <div data-yourAnswerValue>ANS!</div>
+                <div class="correct-answer">CORRECT ANSWER: </div>
+                <div data-correctAnswerValue class="correct-color">ANS!</div>
+                <button data-overrideButton>Override</button>
+                <button data-nextButtonShowAns>Next</button>
+            </div>
+        </div>
+
+        <div data-endOfRoundTable class="end-of-round-table">
+            <h1>End of round #</h1>
+            <div class="term-def-table">
+                <div>Terms</div>
+                <div data-startingPoint>Defintion</div>
+        
+                <div data-endingPoint>Terms</div>
+                <div>Defintion</div>
+            </div>
+            <button data-nextButtonEndOfRound class="end-of-round-button">Next</button>
+        </div>
+    </div>
+</body>
+</html>

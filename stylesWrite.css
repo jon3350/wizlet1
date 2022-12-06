@@ -1,0 +1,178 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    /* border: 2px solid black; */
+}
+
+:root {
+    --backgroundColor: rgb(19, 8, 65);
+    --greyBlock: rgb(70, 67, 83);
+    --blueButton: rgb(29, 33, 228);
+    --cyanButton: rgb(49, 165, 156);
+    --correctGreen: rgb(0, 165, 28);
+    --wrongRed: rgb(176, 0, 0);
+}
+
+body {
+    background-color: var(--backgroundColor);
+    color: white;
+}
+
+button {
+    outline: none;
+    border-radius: 7px;
+    border: none;
+}
+
+.main-header {
+    font-size: 2rem;
+    margin: 20px, 0px;
+    padding: 20px;
+    border: 2px solid rgb(0, 0, 0);
+    display: flex;
+}
+
+.main-nav {
+    display: flex;    
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.main-nav a:hover {
+    opacity: 0.8;
+    background-color: rgba(27, 19, 82, 0.8);
+}
+
+.horizontal-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 10%;
+}
+
+.display-controls-container {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    gap: 40px;
+}
+
+.display-control-item {
+    padding: 10px;
+}
+
+
+.write-card {
+    background-color: var(--greyBlock);
+    margin: 20px;
+    padding: 20px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+
+    width: 50%;
+}
+
+.term {
+    padding: 30px;
+    font-size: 2rem;
+}
+
+.input-and-button-wrapper {
+    display: flex;
+    gap: 20px;
+}
+
+.input-and-button-wrapper input {
+    border: 2px solid var(--cyanButton);
+}
+
+.input-and-button-wrapper input:focus {
+    box-shadow: 0 0 3px 3px var(--cyanButton);
+}
+
+.input-and-button-wrapper button {
+    padding: 10px;
+    background-color: var(--blueButton);
+    color: white;
+}
+
+.accent-buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.accent-buttons button {
+    padding: 10px;
+    background-color: var(--cyanButton);
+    color: white;
+}
+
+
+.after-submitted {
+    margin: 20px;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr
+}
+
+.after-submitted button {
+    padding: 10px;
+    background-color: var(--blueButton);
+    color: white;
+}
+
+
+.end-of-round-table {
+    margin: 20px;
+    padding: 20px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--greyBlock);
+}
+
+.term-def-table {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px 20px;
+    font-size: 2rem;
+}
+
+.end-of-round-button {
+    padding: 10px;
+    background-color: var(--blueButton);
+    color: white;
+}
+
+
+
+/* universal class */
+.hide {
+    display: none;
+}
+
+.correct-color {
+    color: var(--correctGreen);
+}
+
+.wrong-color {
+    color: var(--wrongRed)
+}
+
+/* COPIED FROM styles.css */
+
+
+::placeholder {
+    color: rgba(255, 255, 255, 0.596);
+}
+
+/* kinda lazy lol */
+button:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}

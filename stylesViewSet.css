@@ -1,0 +1,191 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    /* border: 2px solid black; */
+}
+
+:root {
+    --backgroundColor: rgb(19, 8, 65);
+    --greyBlock: rgb(70, 67, 83);
+    --blueButton: rgb(29, 33, 228);
+}
+
+body {
+    background-color: var(--backgroundColor);
+    color: white;
+}
+
+button {
+    outline: none;
+    border-radius: 7px;
+    border: none;
+}
+
+.main-header {
+    font-size: 2rem;
+    margin: 20px, 0px;
+    padding: 20px;
+    border: 2px solid rgb(0, 0, 0);
+    display: flex;
+}
+
+.main-nav {
+    display: flex;    
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.main-nav a:hover {
+    opacity: 0.8;
+    background-color: rgba(27, 19, 82, 0.8);
+}
+
+.title {
+    font-size: 3rem;
+    padding: 20px;
+}
+
+.game-buttons-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    border-bottom: 2px solid black;
+}
+
+.game-buttons-container button {
+    font-size: 2rem;
+    padding: 10px;
+    background-color: var(--greyBlock);
+    color: white;
+}
+
+.flashcard-container {
+    font-size: 2rem;
+    padding: 10px;
+    background-color: var(--greyBlock);
+    color: white;
+    margin: 50px;
+    max-width: 800px;
+}
+
+.flashcard-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.flashcard-content {
+    /* min-height: 200px; */
+    padding: 80px;
+    text-align: center;
+}
+
+.flashcard-content:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.flashcard-controls {
+    font-size: 2rem;
+    padding: 10px;
+    background-color: var(--greyBlock);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+.flashcard-controls button {
+    font-size: 1.5rem;
+    width: 40%;
+    padding: 10px;
+    background-color: var(--greyBlock);
+    color: white;
+    border: 1px solid white;
+}
+
+.term-table-title {
+    margin: 20px;
+}
+
+.term-table-container {
+    /* background-color: var(--greyBlock); */
+    font-size: 2rem;
+    margin: 20px;
+    gap: 10px 3px;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+}
+
+.term-table-container div {
+    background-color: var(--greyBlock);
+    padding: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+/* COPIED FROM STYLES.CSS */
+
+.my-sets-div {
+    padding: 30px;
+}
+
+.my-sets-div h1 {
+    margin-bottom: 20px;
+}
+
+.set-container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 20px;
+}
+
+.set-button {
+    padding: 10px;
+    background-color: var(--greyBlock);
+    color: white;
+}
+
+.create-set-div {
+    padding: 30px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, 
+textarea {
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--greyBlock);
+    color: white;
+    font-size: 2rem;
+}
+
+::placeholder {
+    color: rgba(255, 255, 255, 0.596);
+}
+
+.create-set-button {
+    background-color: var(--blueButton);
+    color: white;
+    font-size: 2rem;
+}
+
+/* kinda lazy lol */
+button:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}

@@ -19,20 +19,30 @@
     </header>
 
     <div class="horizontal-container">
+
         <div class="display-controls-container">
             <h1>Write!</h1>
-            <div class="display-control-item remaining-tag">Remaining #</div>
-            <div class="display-control-item incorrect-tag">Incorrect #</div>
-            <div class="display-control-item correct-tag">Correct #</div>
-            <!-- <div class="display-control-item">
-                <label for="term-or-def-option">Answer With</label>
-                <input id="term-or-def-option" list="term-or-def-datalist">
-                <datalist id="term-or-def-datalist">
-                    <option value="Term"></option>
-                    <option value="Defintion"></option>
-                </datalist>
-                <button class="restart-button">Restart</button>
-            </div> -->
+            <div data-remainingTag class="display-control-item remaining-tag">
+                <div>Remaining #</div>
+                <div class="health-bar">
+                    <span></span>
+                </div>
+            </div>
+            <div data-incorrectTag class="display-control-item incorrect-tag">
+                <div>Incorrect #</div>
+                <div class="health-bar">
+                    <span></span>
+                </div>
+            </div>
+            <div data-correctTag class="display-control-item correct-tag">
+                <div>Correct #</div>
+                <div class="health-bar">
+                    <span></span>
+                </div>
+            </div>
+
+            <button data-answerWithTermButton class="ans-with-term-button">Answer With Term</button>
+            <button data-answerWithDefButton class="ans-with-def-button">Answer With Def</button>
         </div>
 
         <div data-writeCard class="write-card">
@@ -42,11 +52,25 @@
                 <button data-answerButton class="answer-button">Answer</button>
             </div>
             <div data-accentButtonParent class="accent-buttons">
-                <button>A</button>
-                <button>A</button>
-                <button>A</button>
-                <button>A</button>
-                <button>A</button>
+                <button>á</button>
+                <button>à</button>
+                <button>â</button>
+                <button>é</button>
+                <button>è</button>
+                <button>ê</button>
+                <button>ë</button>
+                <button>í</button>
+                <button>ï</button>
+                <button>î</button>
+                <button>ñ</button>
+                <button>ô</button>
+                <button>ó</button>
+                <button>ù</button>
+                <button>û</button>
+                <button>ü</button>
+                <button>ú</button>
+                <button>¿</button>
+                <button>¡</button>
             </div>
 
             <div data-afterSubmitted class="after-submitted">
@@ -69,6 +93,12 @@
                 <div>Defintion</div>
             </div>
             <button data-nextButtonEndOfRound class="end-of-round-button">Next</button>
+        </div>
+
+        <div data-finishScreen class="finish-screen">
+            <h1>Congradulations! You've Finsihed!</h1>
+            <button><a href="viewSet.html">Go Home</a></button>
+            <button data-startOverButton>Start Over</button>
         </div>
     </div>
 </body>

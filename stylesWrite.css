@@ -37,7 +37,7 @@ button {
     display: flex;    
 }
 
-.main-nav a {
+.main-nav a {   
     text-decoration: none;
     color: white;
 }
@@ -64,6 +64,37 @@ button {
     padding: 10px;
 }
 
+.health-bar {
+    position: relative;
+    margin: 10px 0px;
+    height: 20px;
+}
+
+.health-bar span {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+}
+
+.remaining-tag .health-bar {background-color: rgb(148, 166, 255);}
+.remaining-tag span {background-color: blue;}
+.incorrect-tag .health-bar {background-color: rgb(255, 166, 166);}
+.incorrect-tag span {background-color: red;}
+.correct-tag .health-bar {background-color: rgb(199, 255, 192);}
+.correct-tag span {background-color:  green;}
+
+.ans-with-term-button,
+.ans-with-def-button {
+    padding: 10px;
+    background-color: var(--blueButton);
+    color: white;
+}
+
+/* applied class */
+.box-shadow-button {
+    box-shadow: 0 0 2px 3px;
+}
+
 
 .write-card {
     background-color: var(--greyBlock);
@@ -73,7 +104,7 @@ button {
     display: flex;
     flex-direction: column;
 
-    width: 50%;
+    width: 60%;
 }
 
 .term {
@@ -88,6 +119,10 @@ button {
 
 .input-and-button-wrapper input {
     border: 2px solid var(--cyanButton);
+    font-size: 2rem;
+
+    /* suspicious */
+    width: 100%;
 }
 
 .input-and-button-wrapper input:focus {
@@ -98,6 +133,8 @@ button {
     padding: 10px;
     background-color: var(--blueButton);
     color: white;
+    font-size: 1.2rem;
+
 }
 
 .accent-buttons {
@@ -110,6 +147,7 @@ button {
     padding: 10px;
     background-color: var(--cyanButton);
     color: white;
+    font-size: 1.1rem;
 }
 
 
@@ -117,7 +155,8 @@ button {
     margin: 20px;
     gap: 20px;
     display: grid;
-    grid-template-columns: 1fr 2fr
+    grid-template-columns: 1fr 2fr;
+    font-size: 1.7rem;
 }
 
 .after-submitted button {
@@ -134,11 +173,13 @@ button {
     display: flex;
     flex-direction: column;
     background-color: var(--greyBlock);
+
+    width: 60%;
 }
 
 .term-def-table {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 2fr 3fr;
     gap: 20px 20px;
     font-size: 2rem;
 }
@@ -146,6 +187,32 @@ button {
 .end-of-round-button {
     padding: 10px;
     background-color: var(--blueButton);
+    color: white;
+}
+
+
+.finish-screen {
+    margin: 20px;
+    padding: 20px;
+    background-color: var(--greyBlock);
+    text-align: center;
+
+    width: 60%;
+}
+
+.finish-screen h1 {
+    padding: 30px;
+}
+
+.finish-screen button {
+    padding: 10px;
+    background-color: var(--blueButton);
+    color: white;
+    margin: 0px 40px;
+}
+
+.finish-screen a {
+    text-decoration: none;
     color: white;
 }
 
@@ -163,6 +230,13 @@ button {
 .wrong-color {
     color: var(--wrongRed)
 }
+
+
+/* to all buttons */
+button:focus {
+    box-shadow: 0 0 2px 3px;
+}
+
 
 /* COPIED FROM styles.css */
 

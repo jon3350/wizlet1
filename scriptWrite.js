@@ -231,9 +231,9 @@ function updateTags () {
 function checkAnswer(input, answer) {
     input = input.replaceAll(' ','');
     input = input.replaceAll('\n','');
-    input.toUpperCase();
+    input = input.toUpperCase();
     answer = answer.replaceAll(' ','');
     answer = answer.replaceAll('\n','');
-    answer.toUpperCase();
+    answer = answer.toUpperCase();
     return input === answer;
 }

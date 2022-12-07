@@ -200,7 +200,7 @@ function showEndOfRound() {
     //shrink list
     for(let i=list.length-1; i>=0; i--) {
         if(rightWrongArr[i]) {
-            list.splice(i,i+1);
+            list.splice(i,1);
         }
     }
 }

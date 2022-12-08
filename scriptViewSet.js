@@ -12,6 +12,14 @@ const list = set.termDefArr;
 const title = document.querySelector('[data-title]');
 title.innerText = set.title;
 
+//Delete function
+const deleteButton = document.querySelector('[data-deleteButton]');
+deleteButton.addEventListener('click', e => {
+    allSets.splice(allSetsIndex, 1);
+    localStorage.setItem('allSets', JSON.stringify(allSets));
+    window.open('index.html','_self');
+})
+
 
 
 //Set up table row

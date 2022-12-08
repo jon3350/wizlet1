@@ -1,0 +1,133 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    /* border: 2px solid black; */
+}
+
+:root {
+    --backgroundColor: rgb(19, 8, 65);
+    --greyBlock: rgb(70, 67, 83);
+    --blueButton: rgb(29, 33, 228);
+
+    --cardColor: rgba(0, 0, 0, 0.607);
+}
+
+body {
+    background-color: var(--backgroundColor);
+    color: white;
+}
+
+.main-header {
+    font-size: 2rem;
+    margin: 20px, 0px;
+    padding: 20px;
+    border: 2px solid rgb(0, 0, 0);
+    display: flex;
+}
+
+.main-nav {
+    display: flex;    
+}
+
+.main-nav a:hover {
+    opacity: 0.8;
+    background-color: rgba(27, 19, 82, 0.8);
+}
+
+button {
+    outline: none;
+    border-radius: 7px;
+    border: none;
+    padding: 10px;
+    background-color: var(--blueButton);
+    color: white;
+    font-size: 1.5rem;
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+button:focus {
+    box-shadow: 0 0 2px 3px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.horizontal-container {
+    display: flex;
+}
+
+.controls-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: var(--greyBlock);
+    padding: 20px;
+    margin: 20px;
+
+    width: 15%;
+}
+
+.title {
+    font-size: 2rem;
+}
+
+.timer {
+    font-size: 3rem;
+    color: rgba(0, 0, 201, 0.544);
+    text-shadow: 0 0 1px black;
+}
+
+.best-timer-display {
+    font-size: 1rem;
+}
+
+
+
+.game-area-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    background-color: var(--greyBlock);
+    margin: 20px;
+    padding: 20px;
+
+
+    width: 80%;
+}
+
+.card {
+    background-color: var(--cardColor);
+    border: 2px solid rgba(255, 255, 255, 0.562);
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.5rem;
+
+    height: 16vh;
+}
+
+.card.selected {
+    box-shadow: 0 0 10px 5px;
+}
+
+.card.right {
+    background-color: forestgreen;
+}
+
+.card.wrong {
+    background-color: red;
+}
+
+.card:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+/* universal classes */

@@ -70,7 +70,44 @@ const featuredInputButton = document.querySelector('[data-featuredInputButton]')
 featuredInputButton.addEventListener('click', e => {
     //defined above but locally
     const textArea = document.querySelector('[data-importInput]');
-    if(featuredInputBox.value === 'Numbers (5)') {
+    if(featuredInputBox.value === 'French Family Vocab (34)') {
+        textArea.value = 
+        "Proche	close/near in relationship to someone\n" +
+        "Compréhensif	understanding\n" +
+        "s'inquieter	to worry\n" +
+        "aimer/s'aimer	to like/love/to like or love one another\n" +
+        "strict	strict\n" +
+        "permettre à quelqu'un de faire quelque chose	to allow somebody to do something\n" +
+        "faire peur à	to scare/frighten/to give somebody a scare\n" +
+        "faire peur	to be frightened/to be scared\n" +
+        "punir	to punish\n" +
+        "s'entendre bien/mal avec quelqu'un	to get along/not get\n" +
+        "rigoler ensemble	to laugh together\n" +
+        "se disputer	to quarrel with each other\n" +
+        "embêter	to annoy/bother\n" +
+        "manquer de	to lack\n" +
+        "manquer à quelqu'un	to miss someone\n" +
+        "mourir	to die\n" +
+        "décéder	to die\n" +
+        "attentionné	attentive/considerate\n" +
+        "se fâcher avec/contre quelqu'un	to quarrel with someone\n" +
+        "élargie	extended\n" +
+        "gâter	to spoil\n" +
+        "communiquer avec quelqu'un	to talk with someone\n" +
+        "s'énerver	to get angry/worked up\n" +
+        "reconnaissant	grateful/appreciative\n" +
+        "prendre soin de quelque chose ou quelqu'un	to take care of something/someone\n" +
+        "partager	to share\n" +
+        "un mariage mixte	a mixed marriage\n" +
+        "évoluer	to progress/develop\n" +
+        "vivre sans enfants	to live without children\n" +
+        "une famille nucléaire/une famille traditionnelle	a nuclear/traditional family\n" +
+        "une famille monoparentale	a single-parent family\n" +
+        "une famille homoparentale	a same-sex parent family\n" +
+        "une famille recomposée	a blended family\n" +
+        "le ménage	household";
+    }
+    else if(featuredInputBox.value === 'Numbers (5)') {
         textArea.value = 
         'one	1\n' +
         'two	2\n' +

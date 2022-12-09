@@ -17,7 +17,6 @@ while(list.length > 10) {
     list.pop();
 }
 
-console.log(list);
 
 
 //Set up

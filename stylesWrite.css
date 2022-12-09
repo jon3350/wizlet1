@@ -10,8 +10,8 @@
     --greyBlock: rgb(70, 67, 83);
     --blueButton: rgb(29, 33, 228);
     --cyanButton: rgb(49, 165, 156);
-    --correctGreen: rgb(0, 165, 28);
-    --wrongRed: rgb(176, 0, 0);
+    --correctGreen: rgb(0, 230, 0);
+    --wrongRed: rgb(255, 0, 0);
 }
 
 body {
@@ -156,7 +156,7 @@ button {
     gap: 20px;
     display: grid;
     grid-template-columns: 1fr 2fr;
-    font-size: 1.7rem;
+    font-size: 2rem;
 }
 
 .after-submitted button {
@@ -225,10 +225,12 @@ button {
 
 .correct-color {
     color: var(--correctGreen);
+    text-shadow: 0 0 2px black;
 }
 
 .wrong-color {
-    color: var(--wrongRed)
+    color: var(--wrongRed);
+    text-shadow: 0 0 2px black;
 }
 
 

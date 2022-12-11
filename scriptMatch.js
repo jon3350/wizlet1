@@ -48,6 +48,9 @@ let magicCard = null;
 const gameBox = document.querySelector('[data-gameBox]');
 function setUpCards() {
     const cardArr = [];
+    //delete all cards
+    Array.from(gameBox.children).forEach(x => x.remove());
+
     //add the remaining to the gameBox
     list.forEach( (element, index) => {
         const cardTerm = document.createElement('div');

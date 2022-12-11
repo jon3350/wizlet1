@@ -19,61 +19,133 @@
             </div>
             <div class="header-item header-item3">
                 <button>options</button>
-                <button>X</button>
+                <button>&times;</button>
             </div>
         </div>
 
-        <div class="progress-bar">
-            <span></span>
-        </div>
     </header>
 
-    <div class="question-list">
-        <button class="question-list-button">Show</button>
-
-        <div class="true-or-false-list">
-            True/False
-            <div>1</div>
-            <div>2skjdf</div>
-            <div>3skdfj</div>
-            <div>4skjdf</div>
-            <div>5skdfj</div>
-            <div>6skjdf</div>
-            <div>7skdfj</div>
-            <div>8skjdf</div>
-            <div>9skdfj</div>
-            <div>10skjdf</div>
+    <div class="not-header">
+        <div class="test-title">Welcome to Test</div>
+        <div class="matching-container">
+            <div class="section-title">Matching</div>
+            <div class="matching-ques-container">
+                <div class="matching-item">
+                    <span>1)</span>
+                    <input type="number">
+                    <span class="match-term">term</span>
+                    <span class="match-def strike">Def</span>
+                    <div class="correct-answer">
+                        Correct
+                    </div>
+                </div>
+                <div class="matching-item">
+                    <span>2)</span>
+                    <input type="number">
+                    <span class="match-term">term</span>
+                    <span class="match-def">Def</span>
+                </div>
+                <div class="matching-item">
+                    <span>3)</span>
+                    <input type="number">
+                    <span class="match-term">term</span>
+                    <span class="match-def">Def</span>
+                </div>
+            </div>
         </div>
 
-        <div class="matching-list">
-            Matching
+        <div class="multi-choice-container">
+            <div class="section-title">Multiple Choice</div>
+            <div class="multi-choice-ques-container">
+                <div class="multi-choice-item">
+                    <div>
+                        <span class="multi-choice-ques-number">4)</span>
+                        <input type="text" readonly>
+                        <span class="multi-choice-term"> Question</span>
+                    </div>
+                    <div class="multi-choice-def-container">
+                        <div class="multi-choice-def">A</div>
+                        <div class="multi-choice-def">B</div>
+                        <div class="multi-choice-def">C</div>
+                        <div class="multi-choice-def">D</div>
+                    </div>
+                    <div class="correct-answer">
+                        Correct
+                    </div>
+                </div>
+                <div class="multi-choice-item">
+                    <div>
+                        <span class="multi-choice-ques-number">5)</span>
+                        <input type="text" readonly>
+                        <span class="multi-choice-term"> Question</span>
+                    </div>
+                    <div class="multi-choice-def-container">
+                        <div class="multi-choice-def choice-selected">A</div>
+                        <div class="multi-choice-def">B</div>
+                        <div class="multi-choice-def">C</div>
+                        <div class="multi-choice-def">D</div>
+                    </div>
+                </div>
+                <div class="multi-choice-item">
+                    <div>
+                        <span class="multi-choice-ques-number">6)</span>
+                        <input type="text" readonly>
+                        <span class="multi-choice-term"> Question</span>
+                    </div>                    <div class="multi-choice-def-container">
+                        <div class="multi-choice-def">A</div>
+                        <div class="multi-choice-def">B</div>
+                        <div class="multi-choice-def">C</div>
+                        <div class="multi-choice-def">D</div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="multiple-choice-list">
-            Multiple-Choice
+        <div class="written-container">
+            <div class="section-title">Written Questions</div>
+            <div class="written-ques-container">
+                <div class="written-item">
+                    <div class="written-term">7) Term</div>
+                    <input type="text">
+                    <div class="correct-answer">
+                        Correct
+                    </div>
+                </div>
+                <div class="written-item">
+                    <div class="written-term">8) Term</div>
+                    <input type="text">
+                </div>
+                <div class="written-item">
+                    <div class="written-term">9) Term</div>
+                    <input type="text">
+                </div>
+            </div>
         </div>
 
-        <div class="written-list">
-            Writting
+        <div class="submit-button-wrapper">
+            <button class="submit-button">Submit!</button>
         </div>
 
     </div>
 
-    <div class="not-header">
 
-        <div class="card-container">
-            <div>1</div>
-            <div>2skjdf</div>
-            <div>3skdfj</div>
-            <div>4skjdf</div>
-            <div>5skdfj</div>
-            <div>6skjdf</div>
-            <div>7skdfj</div>
-            <div>8skjdf</div>
-            <div>9skdfj</div>
-            <div>10skjdf</div>
+    <div class="options">
+        <button>Create New Test</button>
+        <input type="number" placeholder="number of questions">
+        <div class="question-type-container">
+            <div>
+                <input type="checkbox" id="checkboxMatch">
+                <label for="checkboxMatch">Matching</label>
+            </div>
+            <div>
+                <input type="checkbox" id="checkboxMulti">
+                <label for="checkboxMulti">Multiple Choice</label>
+            </div>
+            <div>
+                <input type="checkbox" id="checkboxWritten">
+                <label for="checkboxWritten">Matching</label>
+            </div>
         </div>
-
     </div>
 
 

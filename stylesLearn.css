@@ -1,0 +1,135 @@
+*,*::before,*::after {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    /* border: 2px solid black; */
+}
+
+.card-container * {
+    margin: 10px;
+}
+
+:root {
+    --purple: rgb(19, 8, 65);
+    --grey: rgb(70, 67, 83);
+    --green: rgb(0, 230, 0);
+    --red: rgb(255, 0, 0);
+}
+
+body {
+    background-color: var(--purple);
+    color: white;
+    font-size: 1.5rem;
+}
+
+.bold-font {
+    font-weight: bold;
+}
+
+
+button {
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid rgb(226, 226, 226);
+    color: white;
+    font-size: 1.5rem;
+}
+
+button:hover {
+    box-shadow: 0 0 2px 2px white;
+}
+
+.purple-button {
+    background-color: var(--purple);
+}
+
+.grey-button {
+    background-color: var(--grey);
+}
+
+.blue-button {
+    background-color: blue;
+}
+
+.green {
+    background-color: var(--green);
+}
+
+.red {
+    background-color: var(--red);
+}
+
+input {
+    background-color: var(--purple);
+    outline: none;
+    border: none;
+    border-bottom: 3px solid white;
+    font-size: 1.5rem;
+    color: white;
+    padding: 5px 5px;
+}
+
+input:focus {
+    border-bottom: 3px solid rgb(255, 251, 0);
+}
+
+input::placeholder {
+    color: rgb(194, 194, 194);
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    padding: 3% 5%;
+    margin: 2% 3%;
+    background-color: var(--grey);
+}
+
+.flex-row-std {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-col-std {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-col-pad {
+    display: flex;
+    flex-direction: column;
+    padding: 3% 5%;
+}
+
+.flex-row-pad {
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 3%;
+}
+
+.grid-std {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px 5px;
+}
+
+.health-bar {
+    position: relative;
+    background-color: rgb(160, 160, 255);
+    height: 2vh;
+}
+
+.health-bar span {
+    margin: 0;
+    position: absolute;
+    background-color: blue;
+
+    height: 100%;
+    width: 50%;
+}
+
+
+
+
+.hide {
+    display: none;
+}

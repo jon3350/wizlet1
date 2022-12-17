@@ -14,55 +14,80 @@
             <span>Learn</span>
             <span>Round #</span>
             <div class="flex-row-std">
-                <button class="purple-button">options</button>
-                <button class="purple-button">&times;</button>
+                <button data-awtd class="purple-button">A/W/T/D</button>
+                <button data-xButton class="purple-button">&times;</button>
             </div>
         </div>
-        <div class="health-bar">
+        <div data-headerHealthBar class="health-bar">
             <span></span>
         </div>
 
     </header>
 
-    <div class="card-container">
-        <div>TERM</div>
+    <div data-mcqContainer class="card-container">
+        <div data-mcqTerm>TERM</div>
         <div class="flex-col-std">
             <div>Choose Answer</div>
-            <div class="grid-std">
+            <div data-mcqChoicesParent class="grid-std">
                 <button class="grey-button">1</button>
                 <button class="grey-button">2</button>
                 <button class="grey-button">3</button>
                 <button class="grey-button">4</button>
             </div>
-            <button class="blue-button">Next</button>
+            <button data-mcqNextButton class="blue-button">Next</button>
         </div>
     </div>
 
-    <div class="card-container">
-        <div>Term</div>
+    <div data-writtenContainer class="card-container">
+        <div data-writtenTerm>Term</div>
         <div class="flex-col-std">
             <div>Answer</div>
-            <input type="text" placeholder="type answer here">
-            <button class="blue-button">Answer</button>
+            <input data-writtenInput type="text" placeholder="type answer here">
+            <div data-accentButtonParent>
+                <button class="purple-button">á</button>
+                <button class="purple-button">à</button>
+                <button class="purple-button">â</button>
+                <button class="purple-button">ç</button>
+                <button class="purple-button">é</button>
+                <button class="purple-button">è</button>
+                <button class="purple-button">ê</button>
+                <button class="purple-button">ë</button>
+                <button class="purple-button">í</button>
+                <button class="purple-button">ï</button>
+                <button class="purple-button">î</button>
+                <button class="purple-button">ñ</button>
+                <button class="purple-button">ô</button>
+                <button class="purple-button">ó</button>
+                <button class="purple-button">ù</button>
+                <button class="purple-button">û</button>
+                <button class="purple-button">ü</button>
+                <button class="purple-button">ú</button>
+                <button class="purple-button">¿</button>
+                <button class="purple-button">¡</button>
+            </div>
+            <button data-writtenAnswerButton class="blue-button">Answer</button>
         </div>
         <div class="grid-std">
             <span>Your Answer:</span>
-            <span>IDK</span>
+            <span data-yourAnswer>IDK</span>
             <span>Correct Answer</span>
-            <span>IK</span>
-            <button class="blue-button">Override</button>
-            <button class="blue-button">Next</button>
+            <span data-rightAnswer>IK</span>
+            <button data-writtenOverride class="blue-button">Override</button>
+            <button data-writtenNext class="blue-button">Next</button>
         </div>
     </div>
 
-    <div class="card-container">
-        <button class="blue-button">Continue</button>
+    <div data-endOfRoundContainer class="card-container">
+        <button data-endOfRoundContinueButton class="blue-button">Continue</button>
         <div>Progress</div>
-        <div class="health-bar">
+        <div data-endOfRoundHealthBar class="health-bar">
             <span></span>
         </div>
         <div class="grid-std">
             <div>TERM</div>
+            <div data-startingPoint>DEF</div>
+
+            <div data-endingPoint>TERM</div>
             <div>DEF</div>
         </div>
     </div>

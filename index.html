@@ -40,12 +40,11 @@
 
 
     <div class="featured-input">
-        <input data-featuredInputBox type="text" list="drop-down" placeholder="load a featured list">
-        <datalist id="drop-down">
-            <option value="French Family Vocab (34)"></option>
-            <option value="Numbers (5)"></option>
-            <option value="French (34)"></option>
-        </datalist>
+        <select id="featured-select" name="featured-select">
+            <option value="0">---Select a featured list---</option>
+            <option value="1">Numbers (5)</option>
+            <option value="2">Rites de Passage (25)</option>
+        </select>
         <button data-featuredInputButton>Load</button>
     </div>
 </body>

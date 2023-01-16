@@ -63,92 +63,50 @@ function createSet() {
 
 
 // https://jsstringconverter.bbody.io/
+//Check off add Newlines
 //make sure to remove the /n at the end
 //hardcode for featured list
-const featuredInputBox = document.querySelector('[data-featuredInputBox]');
+const featuredSelect = document.getElementById('featured-select');
 const featuredInputButton = document.querySelector('[data-featuredInputButton]');
 featuredInputButton.addEventListener('click', e => {
     //defined above but locally
     const textArea = document.querySelector('[data-importInput]');
-    if(featuredInputBox.value === 'French Family Vocab (34)') {
-        textArea.value = 
-        "Proche	close/near in relationship to someone\n" +
-        "Compréhensif	understanding\n" +
-        "s'inquieter	to worry\n" +
-        "aimer/s'aimer	to like/love/to like or love one another\n" +
-        "strict	strict\n" +
-        "permettre à quelqu'un de faire quelque chose	to allow somebody to do something\n" +
-        "faire peur à	to scare/frighten/to give somebody a scare\n" +
-        "faire peur	to be frightened/to be scared\n" +
-        "punir	to punish\n" +
-        "s'entendre bien/mal avec quelqu'un	to get along/not get\n" +
-        "rigoler ensemble	to laugh together\n" +
-        "se disputer	to quarrel with each other\n" +
-        "embêter	to annoy/bother\n" +
-        "manquer de	to lack\n" +
-        "manquer à quelqu'un	to miss someone\n" +
-        "mourir	to die\n" +
-        "décéder	to die\n" +
-        "attentionné	attentive/considerate\n" +
-        "se fâcher avec/contre quelqu'un	to quarrel with someone\n" +
-        "élargie	extended\n" +
-        "gâter	to spoil\n" +
-        "communiquer avec quelqu'un	to talk with someone\n" +
-        "s'énerver	to get angry/worked up\n" +
-        "reconnaissant	grateful/appreciative\n" +
-        "prendre soin de quelque chose ou quelqu'un	to take care of something/someone\n" +
-        "partager	to share\n" +
-        "un mariage mixte	a mixed marriage\n" +
-        "évoluer	to progress/develop\n" +
-        "vivre sans enfants	to live without children\n" +
-        "une famille nucléaire/une famille traditionnelle	a nuclear/traditional family\n" +
-        "une famille monoparentale	a single-parent family\n" +
-        "une famille homoparentale	a same-sex parent family\n" +
-        "une famille recomposée	a blended family\n" +
-        "le ménage	household";
+    if(featuredSelect.value === '0') {
+        //do nothing default
     }
-    else if(featuredInputBox.value === 'Numbers (5)') {
+    else if(featuredSelect.value === '1') {
         textArea.value = 
         'one	1\n' +
         'two	2\n' +
         'three	3\n' +
         'four	4\n' +
         'five	5';
-    } else if(featuredInputBox.value === 'French (34)') {
+    } else if(featuredSelect.value === '2') {
         textArea.value = 
-    'Je Lire Passé composé	j\'ai lu\n' +
-	'Je Courir Passé composé	j\'ai couru\n' +
-	'je (recevoir) passé composé	j\'ai reçu\n' +
-	'Je (Etre passe compose)	j\'ai été\n' +
-	'Je Vouloir Passé composé	j\'ai voulu\n' +
-	'je (devoir passé composé)	j\'ai dû\n' +
-	'Je Craindre Passé composé	j\'ai craint\n' +
-	'je écrire passe compose	j\'ai écrit\n' +
-	'Je Boire Passé composé	j\'ai bu\n' +
-	'Je Dire Passé composé	j\'ai dit\n' +
-	'Je Mettre Passé composé	j\'ai mis\n' +
-	'Je Ouvrir Passé composé	j\'ai ouvert\n' +
-	'Je Pouvoir Passé composé	j\'ai pu\n' +
-	'Je Croire Passé composé	j\'ai cru\n' +
-	'je/suivre (passé composé)	j\'ai suivi\n' +
-	'Je Voir Passé composé	j\'ai vu\n' +
-	'Je Tenir Passé composé	j\'ai tenu\n' +
-	'Je Savoir Passé composé	j\'ai su\n' +
-	'Je falloir Passé composé	J\'ai fallu\n' +
-	'Je, comprendre, passé composé	j\'ai compris\n' +
-	'Je promettre passé composé	J\'ai promis\n' +
-	'Je reprendre passé composé	J\'ai repris\n' +
-	'Je (peindre) PASSÉ COMPOSÉ	J\'ai peint\n' +
-	'Je Envoyer Passé composé	j\'ai envoyé\n' +
-	'Regular -er verb Passé composé ending	é\n' +
-	'Regular -ir verb Passé composé ending	i\n' +
-	'Regular -re verb Passé composé ending	u\n' +
-	'Je Vivre	J\'ai vécu\n' +
-	'Je valoir	J\'ai valu\n' +
-	'Je avoir	J\'ai eu\n' +
-	'Je connaître	J\'ai connu\n' +
-	'Je taire	J\'ai tu\n' +
-	'Je plaire	J\'ai plu\n' +
-	'Je pleuvoir	J\'ai plu';
+        'La naissance d\'un bébé	The birth of a baby\n' +
+        'Des ballons	balloons\n' +
+        'Organiser une fête	to organize a party\n' +
+        'un baptême	baptism\n' +
+        'rendre visite à quelqu\'un	To visite someone\n' +
+        'Féliciter les parents	Celebrate the parents\n' +
+        'aller à l\'église	to go to church\n' +
+        'aller au synagogue	To go to the synagogue\n' +
+        'aller à la mosquée	to go to the mosque\n' +
+        'Offrir des cadeaux	to give (presents)\n' +
+        'un anniversaire	a birthday\n' +
+        'décorer la maison	to decorate the house\n' +
+        'souffler les bougies	to blow out the candles\n' +
+        'gonfler des ballons	to blow up balloons\n' +
+        'un permis de conduire	a driver\'s license\n' +
+        'Un enterrement/la mort	funeral/burial\n' +
+        'acheter les fleurs	to buy flowers\n' +
+        'Pleurer la mort d\'une personne	To cry for the death of a person\n' +
+        'aller au cimetière	to go to the cemetery\n' +
+        'se réunir	to get together/to gather\n' +
+        'Un mariage	marriage; wedding\n' +
+        'une robe de mariée/ une robe blanche	white dress, wedding dress\n' +
+        'Un costume	man\'s suit\n' +
+        'un gâteau	cake\n' +
+        'Echanger des bagues	Exchange Rings';
     }
 })

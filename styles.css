@@ -107,6 +107,15 @@ button:hover {
     gap: 20px;
 }
 
+.featured-input select {
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--greyBlock);
+    color: white;
+    font-size: 2rem;
+}
+
 .featured-input button {
     background-color: var(--blueButton);
     color: white;

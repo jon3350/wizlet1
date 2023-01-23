@@ -83,30 +83,28 @@ featuredInputButton.addEventListener('click', e => {
         'five	5';
     } else if(featuredSelect.value === '2') {
         textArea.value = 
-        'La naissance d\'un bébé	The birth of a baby\n' +
-        'Des ballons	balloons\n' +
-        'Organiser une fête	to organize a party\n' +
-        'un baptême	baptism\n' +
-        'rendre visite à quelqu\'un	To visite someone\n' +
-        'Féliciter les parents	Celebrate the parents\n' +
-        'aller à l\'église	to go to church\n' +
-        'aller au synagogue	To go to the synagogue\n' +
-        'aller à la mosquée	to go to the mosque\n' +
-        'Offrir des cadeaux	to give (presents)\n' +
-        'un anniversaire	a birthday\n' +
-        'décorer la maison	to decorate the house\n' +
-        'souffler les bougies	to blow out the candles\n' +
-        'gonfler des ballons	to blow up balloons\n' +
-        'un permis de conduire	a driver\'s license\n' +
-        'Un enterrement/la mort	funeral/burial\n' +
-        'acheter les fleurs	to buy flowers\n' +
-        'Pleurer la mort d\'une personne	To cry for the death of a person\n' +
-        'aller au cimetière	to go to the cemetery\n' +
-        'se réunir	to get together/to gather\n' +
-        'Un mariage	marriage; wedding\n' +
-        'une robe de mariée/ une robe blanche	white dress, wedding dress\n' +
-        'Un costume	man\'s suit\n' +
-        'un gâteau	cake\n' +
-        'Echanger des bagues	Exchange Rings';
+        "parce que	because\n" +
+        "puisque	since\n" +
+        "de peur que	for fear that\n" +
+        "pendant que	while\n" +
+        "sans que	without\n" +
+        "avant que	before\n" +
+        "à moins que	unless\n" +
+        "pour que	so that\n" +
+        "pourvu que	provided that\n" +
+        "bien que	although\n" +
+        "jusqu'à ce que	until\n" +
+        "afin que	so that, in order that\n" +
+        "être sûr que	to be sure that\n" +
+        "croire que	to believe that\n" +
+        "penser que	to think that\n" +
+        "être certain que	to be certain that\n" +
+        "vouloir que	to want that\n" +
+        "préférer que	to prefer that\n" +
+        "exiger que	to demand that\n" +
+        "souhaiter que	to wish that\n" +
+        "espérer que	to hope that\n" +
+        "aimer que	like that\n" +
+        "désirer que	to desire that";
     }
 })

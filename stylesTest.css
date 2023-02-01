@@ -192,6 +192,7 @@ input:focus {
 
 
 .options {
+    margin-top: 90px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -200,6 +201,7 @@ input:focus {
 
 .options input {
     max-width: none;
+    width: auto;
 }
 
 .question-type-container {

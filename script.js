@@ -106,5 +106,30 @@ featuredInputButton.addEventListener('click', e => {
         "espérer que	to hope that\n" +
         "aimer que	like that\n" +
         "désirer que	to desire that";
+    } else if(featuredSelect.value === '3') {
+        textArea.value = 
+        "de peur que	subjonctif\n" +
+        "sans que	subjonctif\n" +
+        "avant que	subjonctif\n" +
+        "à moins que	subjonctif\n" +
+        "pour que	subjonctif\n" +
+        "pourvu que	subjonctif\n" +
+        "bien que	subjonctif\n" +
+        "jusqu'à ce que	subjonctif\n" +
+        "afin que	subjonctif\n" +
+        "vouloir que	subjonctif\n" +
+        "préférer que	subjonctif\n" +
+        "exiger que	subjonctif\n" +
+        "souhaiter que	subjonctif\n" +
+        "aimer que	subjonctif\n" +
+        "désirer que	subjonctif\n" +
+        "être sûr que	depends\n" +
+        "crorie que	depends\n" +
+        "penser que	depends\n" +
+        "être certain que	depends\n" +
+        "espérer que	depends\n" +
+        "parce que	indicatif\n" +
+        "puisque	indicatif\n" +
+        "pendant que	indicatif";
     }
 })

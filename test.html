@@ -6,10 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test</title>
     <link rel="stylesheet" href="stylesTest.css">
-    <script src="scriptTest.js"></script>
+    <script src="scriptTest.js" defer></script>
 </head>
 
 <body>
+    <template data-matchTemplate>
+        <div class="matching-item">
+            <span>3)</span>
+            <input type="number">
+            <span class="match-term">term</span>
+            <span class="match-def">Def</span>
+        </div>
+    </template>
+
+    <template data-multiTemplate>
+        <div class="multi-choice-item">
+            <div>
+                <span class="multi-choice-ques-number">4)</span>
+                <input type="text">
+                <span class="multi-choice-term"> Question</span>
+            </div>
+            <div class="multi-choice-def-container">
+                <div class="multi-choice-def">A</div>
+                <div class="multi-choice-def">B</div>
+                <div class="multi-choice-def">C</div>
+                <div class="multi-choice-def">D</div>
+            </div>
+            <div class="correct-answer">
+                Correct
+            </div>
+        </div>
+    </template>
+
+    <template data-writtenTemplate>
+        <div class="written-item">
+            <div class="written-term">9) Term</div>
+            <input type="text">
+        </div>
+    </template>
+
+
     <header>
         <div class="header-div">
             <div class="header-item header-item1">Test</div>
@@ -18,18 +54,18 @@
                 <div>Title</div>
             </div>
             <div class="header-item header-item3">
-                <button>options</button>
+                <button data-optionsBtn>options</button>
                 <button>&times;</button>
             </div>
         </div>
 
     </header>
 
-    <div class="not-header">
+    <div class="not-header" data-mainContainer>
         <div class="test-title">Welcome to Test</div>
         <div class="matching-container">
             <div class="section-title">Matching</div>
-            <div class="matching-ques-container">
+            <div class="matching-ques-container" data-matchContainer>
                 <div class="matching-item">
                     <span>1)</span>
                     <input type="number">
@@ -56,7 +92,7 @@
 
         <div class="multi-choice-container">
             <div class="section-title">Multiple Choice</div>
-            <div class="multi-choice-ques-container">
+            <div class="multi-choice-ques-container" data-multiContainer>
                 <div class="multi-choice-item">
                     <div>
                         <span class="multi-choice-ques-number">4)</span>
@@ -73,37 +109,12 @@
                         Correct
                     </div>
                 </div>
-                <div class="multi-choice-item">
-                    <div>
-                        <span class="multi-choice-ques-number">5)</span>
-                        <input type="text" readonly>
-                        <span class="multi-choice-term"> Question</span>
-                    </div>
-                    <div class="multi-choice-def-container">
-                        <div class="multi-choice-def choice-selected">A</div>
-                        <div class="multi-choice-def">B</div>
-                        <div class="multi-choice-def">C</div>
-                        <div class="multi-choice-def">D</div>
-                    </div>
-                </div>
-                <div class="multi-choice-item">
-                    <div>
-                        <span class="multi-choice-ques-number">6)</span>
-                        <input type="text" readonly>
-                        <span class="multi-choice-term"> Question</span>
-                    </div>                    <div class="multi-choice-def-container">
-                        <div class="multi-choice-def">A</div>
-                        <div class="multi-choice-def">B</div>
-                        <div class="multi-choice-def">C</div>
-                        <div class="multi-choice-def">D</div>
-                    </div>
-                </div>
             </div>
         </div>
 
         <div class="written-container">
             <div class="section-title">Written Questions</div>
-            <div class="written-ques-container">
+            <div class="written-ques-container" data-writtenContainer>
                 <div class="written-item">
                     <div class="written-term">7) Term</div>
                     <input type="text">
@@ -129,9 +140,14 @@
     </div>
 
 
-    <div class="options">
-        <button>Create New Test</button>
-        <input type="number" placeholder="number of questions">
+    <div class="options" data-optionContainer>
+        <button data-newTestButton>Create New Test</button>
+        <div>
+            <label>
+                # of ques
+                <input id="numOfQuesInput" type="number" placeholder="number of questions" min="1">
+            </label>
+        </div>
         <div class="question-type-container">
             <div>
                 <input type="checkbox" id="checkboxMatch">
@@ -143,8 +159,17 @@
             </div>
             <div>
                 <input type="checkbox" id="checkboxWritten">
-                <label for="checkboxWritten">Matching</label>
+                <label for="checkboxWritten">Written</label>
             </div>
+        </div>
+        <div>
+            <label>
+                Answer With: 
+                <select id="answerWith">
+                    <option value="term">Term</option>
+                    <option value="def">Def</option>
+                </select>
+            </label>
         </div>
     </div>
 

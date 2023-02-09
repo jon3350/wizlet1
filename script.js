@@ -83,53 +83,48 @@ featuredInputButton.addEventListener('click', e => {
         'five	5';
     } else if(featuredSelect.value === '2') {
         textArea.value = 
-        "parce que	because\n" +
-        "puisque	since\n" +
-        "de peur que	for fear that\n" +
-        "pendant que	while\n" +
-        "sans que	without\n" +
-        "avant que	before\n" +
-        "à moins que	unless\n" +
-        "pour que	so that\n" +
-        "pourvu que	provided that\n" +
-        "bien que	although\n" +
-        "jusqu'à ce que	until\n" +
-        "afin que	so that, in order that\n" +
-        "être sûr que	to be sure that\n" +
-        "croire que	to believe that\n" +
-        "penser que	to think that\n" +
-        "être certain que	to be certain that\n" +
-        "vouloir que	to want that\n" +
-        "préférer que	to prefer that\n" +
-        "exiger que	to demand that\n" +
-        "souhaiter que	to wish that\n" +
-        "espérer que	to hope that\n" +
-        "aimer que	like that\n" +
-        "désirer que	to desire that";
-    } else if(featuredSelect.value === '3') {
-        textArea.value = 
-        "de peur que	subjonctif\n" +
-        "sans que	subjonctif\n" +
-        "avant que	subjonctif\n" +
-        "à moins que	subjonctif\n" +
-        "pour que	subjonctif\n" +
-        "pourvu que	subjonctif\n" +
-        "bien que	subjonctif\n" +
-        "jusqu'à ce que	subjonctif\n" +
-        "afin que	subjonctif\n" +
-        "vouloir que	subjonctif\n" +
-        "préférer que	subjonctif\n" +
-        "exiger que	subjonctif\n" +
-        "souhaiter que	subjonctif\n" +
-        "aimer que	subjonctif\n" +
-        "désirer que	subjonctif\n" +
-        "être sûr que	depends\n" +
-        "crorie que	depends\n" +
-        "penser que	depends\n" +
-        "être certain que	depends\n" +
-        "espérer que	depends\n" +
-        "parce que	indicatif\n" +
-        "puisque	indicatif\n" +
-        "pendant que	indicatif";
+        "Pour décrire les cheveux	to describe hair\n" +
+        "les cheveux longs	long hair\n" +
+        "les cheveux châtains	chestnut hair\n" +
+        "les cheveux blonds	blond hair\n" +
+        "les cheveux courts	short hair\n" +
+        "les cheveux en brosse	crew cut\n" +
+        "les cheveux clairs	light hair\n" +
+        "les cheveux à mi	longeur-mid length, medium length\n" +
+        "une queue de cheval	a pony tail\n" +
+        "les cheveux raides	straight hair\n" +
+        "les cheveux foncés	deep/dark hair\n" +
+        "Il est barbu	He is bearded\n" +
+        "Il a une barbe et une moustache	he has a beard and a mustache\n" +
+        "Il est chauve	he is bald\n" +
+        "J'ai des taches de rousseur	I have freckles\n" +
+        "J'ai un grain de beauté	I have a beauty spot/mole\n" +
+        "J'ai une cicatrice	I have a scar\n" +
+        "Je porte des lentilles de contact	I wear contact lenses\n" +
+        "Le poids	the weight\n" +
+        "Je suis mince	I am thin\n" +
+        "Je suis gros(se)	I am fat\n" +
+        "Je suis maigre	thin\n" +
+        "Je suis forte et musclée!	I am strong and muscular\n" +
+        "Je suis faible	I am weak\n" +
+        "Plein	full\n" +
+        "Un piercing Fin	thin\n" +
+        "Un tatouage	a tatto\n" +
+        "Pointu	pointy\n" +
+        "Mignon(ne)	cute\n" +
+        "Laide/moche	ugly\n" +
+        "Les boutons	pimples\n" +
+        "Poilu	hairy\n" +
+        "Épais(se)	thick\n" +
+        "Frais/Fraîche	fresh\n" +
+        "proportionnel(le)	proportional\n" +
+        "de taille moyenne	medium height\n" +
+        "Elle a une natte	she has a braid\n" +
+        "Elle a un chignon	She has a bun.\n" +
+        "J'ai	I have\n" +
+        "le nez long	long nose\n" +
+        "le nez pointu	pointed nose\n" +
+        "le nez retroussé	snub nose\n" +
+        "Je suis costaud	I am strong/well built";
     }
 })

@@ -108,7 +108,7 @@ featuredInputButton.addEventListener('click', e => {
         "Je suis forte et musclée!	I am strong and muscular\n" +
         "Je suis faible	I am weak\n" +
         "Plein	full\n" +
-        "Un piercing Fin	thin\n" +
+        "Un piercing Fin	A fine piercing\n" +
         "Un tatouage	a tatto\n" +
         "Pointu	pointy\n" +
         "Mignon(ne)	cute\n" +
